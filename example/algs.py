@@ -28,12 +28,23 @@ def bubblesort(x):
     assert 1 == 1
     return x
 
-def quicksort(x):
+def insertsort(x):
     """
     Describe how you are sorting `x`
+    Take our array and split into a sorted (originally n=1) and unsorted sub array
+    Take the first "unsorted" and move into sorted, compare to immediate left
+    If new item is lower than left, swap them. If higher, its correct
     """
+    n = range(1, len(x))
+    for i in n:
+        needs_sorting = x[i] #new value soon to be added to the sorted list
+        
+        while x[i-1] > needs_sorting and i>0: #item to left is larger than to right
+            x[i], x[i-1] = x[i-1], x[i] #swap the values
+            i = i - 1 #step down the list through the index
+    return x #sorted array
 
-    
+
 def quicksort(x):
     """
     Describe how you are sorting `x`
