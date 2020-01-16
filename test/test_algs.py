@@ -20,15 +20,46 @@ def test_bubblesort():
     # think about: (1) does your code handle 0-element arrays without
     # failing, (2) does your code handle characters?
 
-    x = np.array([1,2,4,0,1])
+    x = [9,8,7,6,5,4,3,2,1] #regular list
+    x1 = [] #empty list
+    x2 = ["b","c","a", "d", "z", "a", "c", "h"] #will it sort characters?
+    x3 = [5,7,1,5,0,2,5,7,5,5,5,8657] #how does it handle duplicates?
+
     
     # for now, just attempt to call the bubblesort function, should
     # actually check output
     algs.bubblesort(x)
+    algs.bubblesort(x1)
+    algs.bubblesort(x2)
+    algs.bubblesort(x3)
+
+def test_insertsort():
+    # Actually test bubblesort here. It might be useful to think about
+    # some edge cases for your code, where it might fail. Some things to
+    # think about: (1) does your code handle 0-element arrays without
+    # failing, (2) does your code handle characters?
+
+    x = [9,8,7,6,5,4,3,2,1] #regular list
+    x1 = [] #empty list
+    x2 = ["b","c","a", "d", "z", "a", "c", "h"] #will it sort characters?
+    x3 = [5,7,1,5,0,2,5,7,5,5,5,8657] #how does it handle duplicates?
+    
+    # for now, just attempt to call the bubblesort function, should
+    # actually check output
+    algs.bubblesort(x)
+    algs.bubblesort(x1) 
+    algs.bubblesort(x2) 
+    algs.bubblesort(x3)   
 
 def test_quicksort():
 
-    x = np.array([1,2,4,0,1])
+    x = [9,8,7,6,5,4,3,2,1] #regular list
+    x1 = [] #empty list
+    x2 = ["b","c","a", "d", "z", "a", "c", "h"] #will it sort characters?
+    x3 = [5,7,1,5,0,2,5,7,5,5,5,8657] #how does it handle duplicates?
     # for now, just attempt to call the quicksort function, should
     # actually check output
     algs.quicksort(x)
+    algs.quicksort(x1)
+    algs.quicksort(x2)
+    algs.quicksort(x3)
