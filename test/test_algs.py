@@ -47,10 +47,10 @@ def test_insertsort():
     
     # for now, just attempt to call the bubblesort function, should
     # actually check output
-    algs.bubblesort(x)
-    algs.bubblesort(x1) 
-    algs.bubblesort(x2) 
-    algs.bubblesort(x3)   
+    assert algs.insertsort(x)==[1,2,3,4,5,6,7,8,9]
+    assert algs.insertsort(x1)== []
+    assert algs.insertsort(x2)== ['a', 'a', 'b', 'c', 'c', 'd', 'h', 'z']
+    assert algs.insertsort(x3)== [0, 1, 2, 5, 5, 5, 5, 5, 5, 7, 7, 8657]  
 
 def test_quicksort():
 
@@ -60,7 +60,7 @@ def test_quicksort():
     x3 = [5,7,1,5,0,2,5,7,5,5,5,8657] #how does it handle duplicates?
     # for now, just attempt to call the quicksort function, should
     # actually check output
-    algs.quicksort(x)
-    algs.quicksort(x1)
-    algs.quicksort(x2)
-    algs.quicksort(x3)
+    assert algs.quicksort(x)==[1,2,3,4,5,6,7,8,9]
+    assert algs.quicksort(x1)== []
+    assert algs.quicksort(x2)== ['a', 'a', 'b', 'c', 'c', 'd', 'h', 'z']
+    assert algs.quicksort(x3)== [0, 1, 2, 5, 5, 5, 5, 5, 5, 7, 7, 8657]
