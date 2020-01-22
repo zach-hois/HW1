@@ -28,10 +28,11 @@ def test_bubblesort():
     
     # for now, just attempt to call the bubblesort function, should
     # actually check output
-    algs.bubblesort(x)
-    algs.bubblesort(x1)
-    algs.bubblesort(x2)
-    algs.bubblesort(x3)
+    
+    assert algs.bubblesort(x)==[1,2,3,4,5,6,7,8,9]
+    assert algs.bubblesort(x1)== []
+    assert algs.bubblesort(x2)== ['a', 'a', 'b', 'c', 'c', 'd', 'h', 'z']
+    assert algs.bubblesort(x3)== [0, 1, 2, 5, 5, 5, 5, 5, 5, 7, 7, 8657]
 
 def test_insertsort():
     # Actually test bubblesort here. It might be useful to think about
