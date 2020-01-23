@@ -25,7 +25,6 @@ def bubblesort(x):
                 x[j], x[j+1] = x[j+1], x[j]
                 #IF the number before is greater than the next number, switch their order
 
-    assert 1 == 1
     return x
 
 def insertsort(x):
@@ -70,4 +69,10 @@ def quicksort(x):
                 lower.append(i)
                 
     return quicksort(lower) + [pivot] + quicksort(higher) #return
+
+
+
+
+
+
 
